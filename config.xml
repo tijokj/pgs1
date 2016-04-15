@@ -7,7 +7,7 @@
     <author email="tijokj@gmail.com" href="http://wizcraft-ims.com">
         wizcraft-ims.com
     </author>
-	<preference name="FullScreen" value="true"/>
+	
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
@@ -17,36 +17,37 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
 
 	<icon src="res/icon.png"/>
+	
+	<platform name="wp8">
+		<icon src="res/icon/wp8/ApplicationIcon.png" width="99" height="99"/>
+		<icon src="res/icon/wp8/Background.png" width="159" height="159"/>
+		<splash src="res/icon/wp8/SplashScreenImage.png" width="768" height="1280"/>
+	</platform>
+
+	<platform name="ios">
+		<allow-intent href="itms:*" />
+		<allow-intent href="itms-apps:*" />
+	</platform>
+
 	<platform name="android">
-	<icon src = "res/icon/android/drawable-ldpi/icon.png" 
-      gap:platform = "android" gap:qualifier = "ldpi" />
-   <icon src = "res/icon/android/drawable-mdpi/icon.png" 
-      gap:platform = "android" gap:qualifier = "mdpi" />
-   <icon src = "res/icon/android/drawable-hdpi/icon.png" 
-      gap:platform = "android" gap:qualifier = "hdpi" />
-   <icon src = "res/icon/android/drawable-xhdpi/icon.png" 
-      gap:platform = "android" gap:qualifier = "xhdpi" />
-   <icon src = "res/icon/android/drawable-xxhdpi/icon.png" 
-      gap:platform = "android" gap:qualifier = "xxhdpi" />
-	  
- <splash src="res/icon/android/drawable-land-hdpi.png" density="port-hdpi"/>
- <splash src="res/icon/android/drawable-land-ldpi.png" density="port-ldpi"/>
- <splash src="res/icon/android/drawable-land-mdpi.png" density="port-mdpi"/>
- <splash src="res/icon/android/drawable-land-xhdpi.png" density="port-xhdpi"/>
- 
-	  
-   </platform>
-   
- <preference name="SplashScreen" value="screen" />
- <preference name="SplashScreenDelay" value="5000" />
-   
+		<allow-intent href="market:*" />
+		<icon src = "res/icon/android/drawable-ldpi/icon.png" gap:platform = "android" gap:qualifier = "ldpi" />
+		<icon src = "res/icon/android/drawable-mdpi/icon.png" gap:platform = "android" gap:qualifier = "mdpi" />
+		<icon src = "res/icon/android/drawable-hdpi/icon.png" gap:platform = "android" gap:qualifier = "hdpi" />
+		<icon src = "res/icon/android/drawable-xhdpi/icon.png" gap:platform = "android" gap:qualifier = "xhdpi" />
+		<icon src = "res/icon/android/drawable-xxhdpi/icon.png" gap:platform = "android" gap:qualifier = "xxhdpi" />
+
+		<splash src="res/icon/android/drawable-land-hdpi.png" density="port-hdpi"/>
+		<splash src="res/icon/android/drawable-land-ldpi.png" density="port-ldpi"/>
+		<splash src="res/icon/android/drawable-land-mdpi.png" density="port-mdpi"/>
+		<splash src="res/icon/android/drawable-land-xhdpi.png" density="port-xhdpi"/>
+
+	</platform>
+
+	<preference name="FullScreen" value="true"/>
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="5000" />
+	
 </widget>
