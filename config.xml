@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.pgs1" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>wizcraft</name>
+    <description>
+        PhoneGap
+    </description>
+    <author email="tijokj@gmail.com" href="http://wizcraft-ims.com">
+        wizcraft-ims.com
+    </author>
+	<preference name="FullScreen" value="true"/>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+	<icon src="res/icon.png"/>
+	<platform name="android">
+	<icon src = "res/icon/android/drawable-ldpi/icon.png" 
+      gap:platform = "android" gap:qualifier = "ldpi" />
+   <icon src = "res/icon/android/drawable-mdpi/icon.png" 
+      gap:platform = "android" gap:qualifier = "mdpi" />
+   <icon src = "res/icon/android/drawable-hdpi/icon.png" 
+      gap:platform = "android" gap:qualifier = "hdpi" />
+   <icon src = "res/icon/android/drawable-xhdpi/icon.png" 
+      gap:platform = "android" gap:qualifier = "xhdpi" />
+   <icon src = "res/icon/android/drawable-xxhdpi/icon.png" 
+      gap:platform = "android" gap:qualifier = "xxhdpi" />
+	  
+ <splash src="res/icon/android/drawable-land-hdpi.png" density="port-hdpi"/>
+ <splash src="res/icon/android/drawable-land-ldpi.png" density="port-ldpi"/>
+ <splash src="res/icon/android/drawable-land-mdpi.png" density="port-mdpi"/>
+ <splash src="res/icon/android/drawable-land-xhdpi.png" density="port-xhdpi"/>
+ 
+	  
+   </platform>
+   
+ <preference name="SplashScreen" value="screen" />
+ <preference name="SplashScreenDelay" value="5000" />
+   
+</widget>
